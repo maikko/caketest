@@ -1,4 +1,4 @@
-{$Session->flash('auth')}
+{$Session->flash()}
 {$Form->create('Member',['url'=>'/login/login'])}
 <p>{$Form->error('Member.mail')}</p>
 <p>{$Form->error('Member.password')}</p>

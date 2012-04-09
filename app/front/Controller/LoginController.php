@@ -20,6 +20,7 @@ class LoginController extends AppController {
 			$member = $this->Member->find('first', array('conditions' =>
 					array('Member.mail' => $this->data['Member']['mail'], 'Member.password' => md5($this->data['Member']['password']))));
 			if($member){
+				$this->Session->write('member', $member);
 				//ログイン後ページへ
 				$this->redirect('index');
 			}
