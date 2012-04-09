@@ -1,0 +1,9 @@
+<html>
+<head>
+<title>TEST</title>
+</head>
+<body>
+{$content_for_layout}
+{$View->element('sql_dump')}
+</body>
+</html>
